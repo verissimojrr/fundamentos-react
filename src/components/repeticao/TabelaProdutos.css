@@ -1,0 +1,16 @@
+.TabelaProdutos {
+    border: solid salmon;
+    width: 100%;
+}
+
+.TabelaProdutos thead {
+    background-color: darkcyan;
+}
+
+.TabelaProdutos .Par {
+    background-color: aquamarine;
+}
+
+.TabelaProdutos .Impar {
+    background-color: rgb(19, 231, 107);
+}
