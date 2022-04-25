@@ -1,3 +1,9 @@
+import Contador from './components/contador/Contador'
+import Input from './components/formulario/Input'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import UsuarioInfo from './components/repeticao/UsuarioInfo'
+import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Familia from './components/basicos/Familia'
@@ -18,6 +24,23 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#12 - Contador" color='#63cae9'>
+                <Contador numeroInicial={10}/>
+            </Card>
+            <Card titulo="#11 - Componente controlado [Input]" color='#cc0707'>
+                <Input/>
+            </Card>
+            <Card titulo="#10 - IndiretaPai" color='#f9fc49'>
+                <IndiretaPai/>
+            </Card>
+            <Card titulo="#09 - DiretaPai" color='#88d69f'>
+                <DiretaPai/>
+            </Card>
+            <Card titulo="#08 - ParOuImpar" color='#d688bf'>
+                <ParOuImpar numero={18}/>
+                <UsuarioInfo usuario={{nome:"José"}}/>
+                {/*<UsuarioInfo usuario={{email:"@gmail.com"}}/>*/}
+            </Card>
             <Card titulo="#07 - TabelaProdutos" color='#2e0ca8'>
                 <TabelaProdutos/>
             </Card>
